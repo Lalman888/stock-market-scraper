@@ -139,7 +139,7 @@ func scrapeAndInsertData() {
 
 	// Start the Fiber server after scraping and data insertion
 	app := setupFiber()
-	err = app.Listen(":3001")
+	err = app.Listen(":8080")
 	if err != nil {
 		fmt.Println("Error starting server:", err)
 	}
