@@ -48,7 +48,8 @@ func main() {
 
 	// Start the Fiber server
 	app := setupFiber()
-	err := app.Listen(":3000")
+	err := app.Listen(":8080")
+
 	if err != nil {
 		fmt.Println("Error starting server:", err)
 	}
